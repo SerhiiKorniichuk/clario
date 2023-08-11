@@ -1,9 +1,9 @@
-import { Button } from '@/components/Button/Button'
 import { GridContainer } from '@/components/GridContainer/GridContainer'
 import styles from './welcomeSection.module.scss'
 import { Typography } from '@/components/Typography/Typography'
 import { PlatformInfo } from '@/sections/WelcomeSection/compoenents/PlatformInfo/PlatformInfo'
 import { TwoColorTypography } from '@/components/TwoColorTypography/TwoColorTypography'
+import { ScrollToBuyButton } from '@/components/ScrollToBuyButton/ScrollToBuyButton'
 
 export const WelcomeSection = () => {
   return (
@@ -21,9 +21,7 @@ export const WelcomeSection = () => {
             Try Clario, a smart anti-spy app that effectively protects your
             privacy.
           </Typography>
-          <Button className={styles.button} fullWidth>
-            Protect me now
-          </Button>
+          <ScrollToBuyButton className={styles.button} fullWidth />
           <PlatformInfo />
         </div>
       </GridContainer>

@@ -4,7 +4,7 @@ import cn from 'classnames'
 import styles from './button.module.scss'
 import colors from '@/styles/colors.module.scss'
 
-interface Props
+export interface ButtonOptions
   extends DetailedHTMLProps<
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
@@ -12,7 +12,7 @@ interface Props
   fullWidth?: boolean
 }
 
-export const Button: FC<Props> = ({
+export const Button: FC<ButtonOptions> = ({
   className,
   fullWidth = false,
   children,

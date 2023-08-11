@@ -1,7 +1,7 @@
 import { GridContainer } from '@/components/GridContainer/GridContainer'
 import { TwoColorTypography } from '@/components/TwoColorTypography/TwoColorTypography'
 import styles from '@/sections/CallToActionSection/callToActionSection.module.scss'
-import { Button } from '@/components/Button/Button'
+import { ScrollToBuyButton } from '@/components/ScrollToBuyButton/ScrollToBuyButton'
 
 export const CallToActionSection = () => {
   return (
@@ -16,7 +16,7 @@ export const CallToActionSection = () => {
           >
             Stop your phone from being spied on.
           </TwoColorTypography>
-          <Button fullWidth>Protect me now</Button>
+          <ScrollToBuyButton fullWidth />
         </div>
       </GridContainer>
     </section>
