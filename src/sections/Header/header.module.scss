@@ -1,11 +1,13 @@
 @import "src/styles/colors.module";
 
 .wrapper {
-  position: absolute;
+  z-index: 100;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: $white-color;
+  backdrop-filter: blur(50px);
 }
 
 .container {
@@ -13,5 +15,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $white-color;
 }
