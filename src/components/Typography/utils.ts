@@ -11,6 +11,8 @@ export const typographyVariantClassNames: TypographyVariantsDefinition = {
   body1: cn(styles.typography, styles.body1),
   ['body1-bold']: cn(styles.typography, styles['body1-bold']),
   body2: cn(styles.typography, styles.body2),
+  body3: cn(styles.typography, styles.body3),
+  body4: cn(styles.typography, styles.body4),
   button1: cn(styles.typography, styles.button1),
   button2: cn(styles.typography, styles.button2),
   price1: cn(styles.typography, styles.price1),

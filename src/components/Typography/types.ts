@@ -20,6 +20,8 @@ export type TypographyVariant =
   | 'body1'
   | 'body1-bold'
   | 'body2'
+  | 'body3'
+  | 'body4'
   | 'button1'
   | 'button2'
   | 'price1'

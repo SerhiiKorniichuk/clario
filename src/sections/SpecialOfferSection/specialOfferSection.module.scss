@@ -1,0 +1,22 @@
+@import "src/styles/colors.module";
+
+.wrapper {
+  position: relative;
+  padding: 170px 0 38px;
+  width: 100%;
+  background-color: $purple-color;
+}
+
+.backgroundPicture {
+  position: absolute;
+  top: 0;
+  height: 150px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
