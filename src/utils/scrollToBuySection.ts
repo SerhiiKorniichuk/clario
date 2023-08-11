@@ -4,10 +4,18 @@ import { BUYING_SECTION_ID } from '@/constants/sectionIds'
 const scrollToSectionWithCounter = (sectionId: string) => {
   let counterOfClicks = 0
 
+  // setTimeout is used to preserve the ability to scroll when the previous scroll has not yet completed.
+  let timeout: NodeJS.Timeout | null = null
+
   return () => {
-    scrollToSectionById(sectionId)
-    counterOfClicks++
-    console.log('Scroll To Price: ', counterOfClicks)
+    if (timeout) clearTimeout(timeout)
+
+    timeout = setTimeout(() => {
+      scrollToSectionById(sectionId)
+      counterOfClicks++
+      console.log('Scroll To Price: ', counterOfClicks)
+      timeout = null
+    }, 500)
   }
 }
 
