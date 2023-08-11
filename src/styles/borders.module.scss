@@ -1,0 +1,17 @@
+// Common
+$banner-border: 14px;
+$banner-border-2: 16px;
+// Button
+$button-border: 70px;
+// Timer
+$timer-border: 4px;
+
+:export {
+  // Common
+  bannerBorder: $banner-border;
+  bannerBorder2: $banner-border-2;
+  // Button
+  buttonBorder: $button-border;
+  // Timer
+  timerBorder: $timer-border;
+}
