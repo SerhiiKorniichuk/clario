@@ -3,6 +3,7 @@ import { Header } from '@/sections/Header/Header'
 import { WelcomeSection } from '@/sections/WelcomeSection/WelcomeSection'
 import { VideoBannerSection } from '@/sections/VideoBannerSection/VideoBannerSection'
 import { BannersPresentationSection } from '@/sections/BannersPresentationSection/BannersPresentationSection'
+import { Footer } from '@/sections/Footer/Footer'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <WelcomeSection />
       <VideoBannerSection />
       <BannersPresentationSection />
+      <Footer />
     </main>
   )
 }
