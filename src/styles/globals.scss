@@ -1,0 +1,32 @@
+@import "src/styles/colors.module";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+html {
+  font-family: var(--font-moderat);
+  font-weight: 400;
+}
+
+body {
+  color: $dark-color;
+  background-color: $white-color;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
