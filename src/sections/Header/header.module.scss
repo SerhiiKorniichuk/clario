@@ -1,0 +1,17 @@
+@import "src/styles/colors.module";
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $white-color;
+}
+
+.container {
+  min-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white-color;
+}
