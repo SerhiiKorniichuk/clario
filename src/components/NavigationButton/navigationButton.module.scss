@@ -1,0 +1,24 @@
+@import 'src/styles/borders.module';
+@import "src/styles/colors.module";
+
+.button {
+  position: relative;
+  margin: 8px;
+  width: 48px;
+  height: 48px;
+  border-radius: $button-border;
+  background-color: $white-color;
+  box-shadow: 0 3px 8px 0 rgba($dark-color,0.15);
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}

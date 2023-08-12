@@ -8,6 +8,7 @@ export const typographyVariantClassNames: TypographyVariantsDefinition = {
   h4: cn(styles.typography, styles.heading4),
   h5: cn(styles.typography, styles.heading5),
   subtitle1: cn(styles.typography, styles.subtitle1),
+  ['subtitle1-bold']: cn(styles.typography, styles['subtitle1-bold']),
   body1: cn(styles.typography, styles.body1),
   ['body1-bold']: cn(styles.typography, styles['body1-bold']),
   body2: cn(styles.typography, styles.body2),

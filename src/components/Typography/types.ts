@@ -17,6 +17,7 @@ export type TypographyVariant =
   | 'h4'
   | 'h5'
   | 'subtitle1'
+  | 'subtitle1-bold'
   | 'body1'
   | 'body1-bold'
   | 'body2'

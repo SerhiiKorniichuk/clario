@@ -25,7 +25,10 @@ export const Button: FC<ButtonOptions> = ({
   )
 
   return (
-    <button {...props} className={buttonClassNames}>
+    <button
+      {...props}
+      className={cn('buttonBaseStyles', buttonClassNames, className)}
+    >
       <Typography variant="button1" color={colors.white}>
         {children}
       </Typography>

@@ -33,6 +33,13 @@
   letter-spacing: -0.249px;
 }
 
+@mixin subtitle1-bold {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: -0.249px;
+}
+
 @mixin body1 {
   font-size: 14px;
   font-weight: 400;

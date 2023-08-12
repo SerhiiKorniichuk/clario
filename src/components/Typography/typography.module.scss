@@ -25,6 +25,10 @@
   @include subtitle1();
 }
 
+.subtitle1-bold {
+  @include subtitle1-bold();
+}
+
 .body1 {
   @include body1();
 }

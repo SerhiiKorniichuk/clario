@@ -1,0 +1,13 @@
+.slider {
+  position: relative;
+  padding: 0 30px 32px;
+}
+
+.navigation {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}

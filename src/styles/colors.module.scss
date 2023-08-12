@@ -4,13 +4,16 @@ $dark-color: #151D51;
 // Gray
 $gray-color: #6C96CE;
 // Purple
+$purple-dark-color: #3D317C;
 $purple-color: #483FDD;
 $purple-light-color: #EFF1FF;
 // Pink
 $pink-light-color: #F6EDFA;
 // Blue
+$blue-color: #1D367C;
 $blue-light-color: #E6F2FE;
 // Green
+$green-color: #305938;
 $green-light-color: #EAF5E4;
 //Orange
 $orange-color: #DF723A;
@@ -23,13 +26,16 @@ $orange-light-color: #FFF2EB;
   // Gray
   gray: $gray-color;
   // Purple
+  purpleDark: $purple-dark-color;
   purple: $purple-color;
   purpleLight: $purple-light-color;
   // Pink
   pinkLight: $pink-light-color;
   // Blue
+  blue: $blue-color;
   blueLight: $blue-light-color;
   // Green
+  green: $green-color;
   greenLight: $green-light-color;
   //Orange
   orange: $orange-color;
