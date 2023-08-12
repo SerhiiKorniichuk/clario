@@ -1,0 +1,33 @@
+@import "src/styles/colors.module";
+@import "src/styles/borders.module";
+
+.container {
+  padding: 5px 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $banner-border-2;
+  background-color: $blue-light-color;
+}
+
+.price {
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.prefix {
+  padding-bottom: 19px;
+}
+
+.suffix {
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.period {
+  opacity: 0.3;
+}

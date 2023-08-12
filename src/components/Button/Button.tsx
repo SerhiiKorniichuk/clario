@@ -4,7 +4,7 @@ import cn from 'classnames'
 import styles from './button.module.scss'
 import colors from '@/styles/colors.module.scss'
 
-interface Props
+export interface ButtonOptions
   extends DetailedHTMLProps<
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
@@ -12,7 +12,7 @@ interface Props
   fullWidth?: boolean
 }
 
-export const Button: FC<Props> = ({
+export const Button: FC<ButtonOptions> = ({
   className,
   fullWidth = false,
   children,
@@ -25,7 +25,10 @@ export const Button: FC<Props> = ({
   )
 
   return (
-    <button {...props} className={buttonClassNames}>
+    <button
+      {...props}
+      className={cn('buttonBaseStyles', buttonClassNames, className)}
+    >
       <Typography variant="button1" color={colors.white}>
         {children}
       </Typography>

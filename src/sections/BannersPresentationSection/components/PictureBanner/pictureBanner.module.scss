@@ -1,0 +1,52 @@
+@import "src/styles/colors.module";
+@import "src/styles/borders.module";
+
+@mixin banner-color($color) {
+  background-color: $color;
+
+  .container:after {
+    background: linear-gradient(180deg, rgba($color, 0.00) 0%, rgba($color, 0.90) 82.13%, $color 100%);
+  }
+}
+
+.wrapper {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $banner-border;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  margin-top: 30px;
+  padding-top: 139%;
+  width: 100%;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 46px;
+    width: 100%;
+  }
+}
+
+.purple {
+  @include banner-color($purple-light-color);
+}
+
+.pink {
+  @include banner-color($pink-light-color);
+}
+
+.blue {
+  @include banner-color($blue-light-color);
+}
+
+.green {
+  @include banner-color($green-light-color);
+}

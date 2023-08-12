@@ -25,16 +25,28 @@
   @include subtitle1();
 }
 
+.subtitle1-bold {
+  @include subtitle1-bold();
+}
+
 .body1 {
   @include body1();
+}
+
+.body1-bold {
+  @include body1-bold();
 }
 
 .body2 {
   @include body2();
 }
 
-.body1-bold {
-  @include body1-bold();
+.body3 {
+  @include body3();
+}
+
+.body4 {
+  @include body4();
 }
 
 .button1 {

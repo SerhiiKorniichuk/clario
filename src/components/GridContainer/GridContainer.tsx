@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react'
 import styles from './gridContainer.module.scss'
 
 interface Props {
-  children: ReactNode
+  children?: ReactNode
 }
 
 export const GridContainer: FC<Props> = ({ children }) => {

@@ -1,0 +1,24 @@
+@import "src/styles/colors.module";
+@import "src/styles/borders.module";
+
+.wrapper {
+  padding: 2px 12px 3px;
+  border-radius: $timer-border;
+  background-color: $orange-light-color;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 192px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.timer {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+}

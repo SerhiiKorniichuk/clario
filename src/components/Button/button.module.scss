@@ -9,12 +9,7 @@
   gap: 4px;
   color: $white-color;
   border-radius: $button-border;
-  border: none;
   background-color: $purple-color;
-
-  &:not(:disabled) {
-    cursor: pointer;
-  }
 
   &.fullWidth {
     width: 100%;
