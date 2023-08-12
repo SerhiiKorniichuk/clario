@@ -3,7 +3,7 @@ import styles from '@/components/NavigationButton/navigationButton.module.scss'
 import cn from 'classnames'
 import Image from 'next/image'
 
-export type NavigationButtonDirection = 'left' | 'right'
+export type NavigationButtonDirection = 'up' | 'left' | 'right' | 'down'
 
 export interface NavigationButtonOptions
   extends Omit<
@@ -17,8 +17,10 @@ export interface NavigationButtonOptions
 }
 
 const arrowSrc: Record<NavigationButtonDirection, string> = {
+  up: '/icons/arrow-up-icon.svg',
   left: '/icons/arrow-left-icon.svg',
   right: '/icons/arrow-right-icon.svg',
+  down: '/icons/arrow-down-icon.svg',
 }
 
 export const NavigationButton: FC<NavigationButtonOptions> = ({

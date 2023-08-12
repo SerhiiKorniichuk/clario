@@ -1,0 +1,33 @@
+@import "src/styles/colors.module";
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  &.isActive {
+    & .counter {
+      background-color: $lime-color;
+    }
+
+    & .arrow {
+      transform: rotate(180deg);
+      fill: $lime-color;
+    }
+  }
+}
+
+.counter {
+  padding-bottom: 2px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  background-color: $dark-color;
+}

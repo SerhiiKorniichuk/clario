@@ -6,13 +6,13 @@
   padding: 40px 24px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   border-radius: $review-card-border;
   background-color: var(--background-color);
 }
 
 .logo {
   position: relative;
+  margin-bottom: 30px;
   height: 25px;
   width: auto;
   display: flex;
@@ -23,4 +23,5 @@
 
 .name {
   margin: auto 0 0;
+  padding-top: 20px;
 }
