@@ -1,3 +1,5 @@
+'use client'
+
 import { GridContainer } from '@/components/GridContainer/GridContainer'
 import {
   InfoBanner,
@@ -5,6 +7,7 @@ import {
 } from '@/sections/BannersPresentationSection/components/InfoBanner/InfoBanner'
 import styles from './bannersPresentationSection.module.scss'
 import { Typography } from '@/components/Typography/Typography'
+import { useShowingObserver } from '@/hooks/useShowingObserver'
 
 const banners: InfoBannerData[] = [
   {
@@ -108,6 +111,26 @@ const banners: InfoBannerData[] = [
 ]
 
 export const BannersPresentationSection = () => {
+  const handleFeatureObserver = (entries: IntersectionObserverEntry[]) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return
+
+      const attrValue = entry.target.getAttribute(
+        BannersPresentationSection.observerAttr,
+      )
+
+      if (attrValue) console.log('Feature Shown:', attrValue)
+    })
+  }
+
+  useShowingObserver({
+    attribute: BannersPresentationSection.observerAttr,
+    callback: handleFeatureObserver,
+    options: {
+      threshold: 0.5, // Half of the section must be visible for it to be considered viewed by the user
+    },
+  })
+
   return (
     <section className={styles.wrapper}>
       <GridContainer>
@@ -128,3 +151,5 @@ export const BannersPresentationSection = () => {
     </section>
   )
 }
+
+BannersPresentationSection.observerAttr = 'data-observer-feature'

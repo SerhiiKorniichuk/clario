@@ -1,5 +1,5 @@
 import { scrollToSectionById } from '@/utils/scrollToSectionById'
-import { BUYING_SECTION_ID } from '@/constants/sectionIds'
+import { SpecialOfferSection } from '@/sections/SpecialOfferSection/SpecialOfferSection'
 
 const scrollToSectionWithCounter = (sectionId: string) => {
   let counterOfClicks = 0
@@ -19,4 +19,6 @@ const scrollToSectionWithCounter = (sectionId: string) => {
   }
 }
 
-export const scrollToBuySection = scrollToSectionWithCounter(BUYING_SECTION_ID)
+export const scrollToBuySection = scrollToSectionWithCounter(
+  SpecialOfferSection.id,
+)

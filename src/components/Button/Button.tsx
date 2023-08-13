@@ -10,11 +10,13 @@ export interface ButtonOptions
     HTMLButtonElement
   > {
   fullWidth?: boolean
+  size?: 'md' | 'sm'
 }
 
 export const Button: FC<ButtonOptions> = ({
   className,
   fullWidth = false,
+  size = 'md',
   children,
   ...props
 }) => {
@@ -27,9 +29,17 @@ export const Button: FC<ButtonOptions> = ({
   return (
     <button
       {...props}
-      className={cn('buttonBaseStyles', buttonClassNames, className)}
+      className={cn(
+        'buttonBaseStyles',
+        buttonClassNames,
+        styles[size],
+        className,
+      )}
     >
-      <Typography variant="button1" color={colors.white}>
+      <Typography
+        variant={size === 'sm' ? 'button2' : 'button1'}
+        color={colors.white}
+      >
         {children}
       </Typography>
     </button>

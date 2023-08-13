@@ -1,17 +1,47 @@
 @import "src/styles/colors.module";
 
-.wrapper {
+.header {
   z-index: 100;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
+  height: 56px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $white-color;
   backdrop-filter: blur(50px);
+  transition: opacity 200ms ease-in-out;
+
+  &.isSticky {
+    position: fixed;
+  }
+
 }
 
-.container {
-  min-height: 56px;
+.containerStatic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerSticky {
+  height: 56px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+.button {
   display: flex;
   justify-content: center;
   align-items: center;

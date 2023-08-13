@@ -4,7 +4,6 @@ import colors from '@/styles/colors.module.scss'
 import Image from 'next/image'
 import { Typography } from '@/components/Typography/Typography'
 import { OfferBlock } from '@/sections/SpecialOfferSection/components/OfferBlock/OfferBlock'
-import { BUYING_SECTION_ID } from '@/constants/sectionIds'
 
 const data = {
   offer: {
@@ -43,7 +42,7 @@ const data = {
 
 export const SpecialOfferSection = () => {
   return (
-    <section id={BUYING_SECTION_ID} className={styles.wrapper}>
+    <section id={SpecialOfferSection.id} className={styles.wrapper}>
       <div className={styles.backgroundPicture}>
         <Image
           src="/pictures/special-offer-background.svg"
@@ -62,3 +61,5 @@ export const SpecialOfferSection = () => {
     </section>
   )
 }
+
+SpecialOfferSection.id = 'buying-section'

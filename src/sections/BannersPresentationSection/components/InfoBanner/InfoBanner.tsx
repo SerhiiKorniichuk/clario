@@ -9,6 +9,7 @@ import {
   TypographyWithIcon,
   TypographyWithIconOptions,
 } from '@/components/TypographyWithIcon/TypographyWithIcon'
+import { BannersPresentationSection } from '@/sections/BannersPresentationSection/BannersPresentationSection'
 
 export interface InfoBannerData {
   color?: PictureBannerColor
@@ -26,7 +27,10 @@ export const InfoBanner: FC<InfoBannerData> = ({
   list,
 }) => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      {...{ [BannersPresentationSection.observerAttr]: title }}
+    >
       <PictureBanner src={pictureSrc} alt={title} color={color} />
       <div className={styles.header}>
         <Typography variant="h4" tag="h4" align="center">
