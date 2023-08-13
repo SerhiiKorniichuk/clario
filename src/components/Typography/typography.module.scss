@@ -1,0 +1,70 @@
+@import "src/styles/typography.module";
+
+.typography {
+  color: var(--typography-color);
+  text-align: var(--typography-align);
+}
+
+.heading1 {
+  @include heading1();
+}
+
+.heading2 {
+  @include heading2();
+}
+
+.heading4 {
+  @include heading4();
+}
+
+.heading5 {
+  @include heading5();
+}
+
+.subtitle1 {
+  @include subtitle1();
+}
+
+.subtitle1-bold {
+  @include subtitle1-bold();
+}
+
+.body1 {
+  @include body1();
+}
+
+.body1-bold {
+  @include body1-bold();
+}
+
+.body2 {
+  @include body2();
+}
+
+.body3 {
+  @include body3();
+}
+
+.body4 {
+  @include body4();
+}
+
+.button1 {
+  @include button1();
+}
+
+.button2 {
+  @include button2();
+}
+
+.price1 {
+  @include price1();
+}
+
+.price2 {
+  @include price2();
+}
+
+.price3 {
+  @include price3();
+}

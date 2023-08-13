@@ -1,0 +1,43 @@
+@import "src/styles/colors.module";
+@import "src/styles/borders.module";
+
+.container {
+  padding: 28px 24px 30px;
+  width: 100%;
+  border-radius: $banner-border-2;
+  background-color: $white-color;
+}
+
+.price {
+  margin: 13px 0 25px;
+}
+
+.services {
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.list {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+.service {
+  align-items: start;
+}
+
+.policy {
+  margin: 16px 0;
+  opacity: 0.5;
+}
+
+.achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 16px
+}

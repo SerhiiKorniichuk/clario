@@ -1,0 +1,21 @@
+@import "src/styles/colors.module";
+@import "src/styles/borders.module";
+
+.button {
+  padding: 9px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: $white-color;
+  border-radius: $button-border;
+  background-color: $purple-color;
+
+  &.fullWidth {
+    width: 100%;
+  }
+
+  &.sm {
+    padding: 6px 15px;
+  }
+}

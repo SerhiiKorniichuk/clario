@@ -1,0 +1,106 @@
+@mixin heading1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.436px;
+}
+
+@mixin heading2 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.44px;
+}
+
+@mixin heading4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.417px;
+}
+
+@mixin heading5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.249px;
+}
+
+@mixin subtitle1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.249px;
+}
+
+@mixin subtitle1-bold {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: -0.249px;
+}
+
+@mixin body1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@mixin body1-bold {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+@mixin body2 {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@mixin body3 {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+@mixin body4 {
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+@mixin button1 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.54px;
+}
+
+@mixin button2 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.54px;
+}
+
+@mixin price1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.54px;
+}
+
+@mixin price2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.54px;
+}
+
+@mixin price3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.54px;
+}

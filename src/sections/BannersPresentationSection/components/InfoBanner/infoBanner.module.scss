@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  margin: 15px 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
